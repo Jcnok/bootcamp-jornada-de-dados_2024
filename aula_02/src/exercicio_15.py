@@ -1,0 +1,5 @@
+print("-"*5,"Concatena duas strings.","-"*5) 
+str1 = str(input("digite uma palavra qualquer:"))
+str2 = str(input("digite uma segunda palavra:")) 
+concatena = " ".join([str1,str2])
+print(f"As duas palavras foram concatenadas:{concatena}")
