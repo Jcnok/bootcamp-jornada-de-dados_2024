@@ -13,7 +13,7 @@
 
 1. Certifique-se de ter o Python instalado em sua máquina.
 * Este projeto utilizar a versão 3.11.3 do python.
-* Você pode baixar e instalar a v3cente do Python em [python.org](https://www.python.org/).
+* Você pode baixar e instalar a versão do Python em [python.org](https://www.python.org/).
 
 2. Clone ou baixe este repositório em sua máquina conforme o exemplo abaixo:
 
@@ -23,7 +23,7 @@
 
 4. Abra um terminal no diretório "kpi.py". 
 
-`$ cd aula_01/src`
+`$ cd bootcamp-jornada-de-dados_2024/aula_01/src`
 
 5. Execute o seguinte comando no terminal:
 
@@ -39,4 +39,6 @@
 ## Alguns erros encontrados:
 * **Não existe nenhuma excecão para incluir qualquer valor na variável nome.**
 * **Salário e Bônus aceitam valores negativos.**
-* **Bug detectado ao inserir um valor tipo string nos campos salá python kpi.py
+* **Bug detectado ao inserir um valor tipo string nos campos salá python kpi.py**
+
+### O próximo desafio será criar uma solução para os erros identificados.
