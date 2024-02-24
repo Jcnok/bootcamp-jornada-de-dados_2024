@@ -38,8 +38,8 @@ Email: julio.okuda@gmail.com |
 
 ## Resolução dos desafios:
 
-* **Aula01**: [Desafio-Cálculo de Bônus]();
-* **Aula02**: [TypeError, Type Check, Type Conversion, try-except e if]();
+* **Aula01**: [Desafio-Cálculo de Bônus](https://github.com/Jcnok/bootcamp-jornada-de-dados_2024/tree/main/aula_01#c%C3%A1lculo-de-b%C3%B4nus-com-entrada-do-usu%C3%A1rio);
+* **Aula02**: [TypeError, Type Check, Type Conversion, try-except e if](https://github.com/Jcnok/bootcamp-jornada-de-dados_2024/tree/main/aula_02#aula-02-typeerror-type-check-type-conversion-try-except-e-if);
 * **Aula03**: [DEBUG, IF, FOR, While, Listas e Dicionários em Python]();
 * **Aula04**: [Type hint, Tipos complexos (Dicionários vs DataFrames Vs Tabelas Vs Excel) e Funções]();
 * **Aula05**: [Projeto 01-Um Bilhão de Linhas-> Desafio de Processamento de Dados com Python]();
