@@ -8,9 +8,8 @@
 
 Bem-vindo ao meu repositório de soluções do Bootcamp de Python e SQL para Engenharia de Dados! Aqui você encontrará minhas resoluções para os exercícios, desafios e projetos realizados durante o ["Bootcamp de Python e SQL para Engenharia de Dados_2024"](https://www.jornadadedados2024.com.br/) conduzido pelo professor [Luciano Galvão](https://www.linkedin.com/in/lucianovasconcelosf/).
 
-## Sobre o Bootcamp
 
-O Bootcamp de Python e SQL para Engenharia de Dados oferece uma experiência abrangente e prática para desenvolvedores de todos os níveis. Ao longo de dois meses, participantes têm acesso a aulas ao vivo, workshops, e projetos práticos que abrangem desde conceitos básicos até tópicos avançados de engenharia de dados.
+O Bootcamp oferece uma experiência abrangente e prática para desenvolvedores de todos os níveis. Ao longo de dois meses, participantes têm acesso a aulas ao vivo, workshops, e projetos práticos que abrangem desde conceitos básicos até tópicos avançados de engenharia de dados.
 
 ## O Que Você Vai Encontrar Neste Repositório
 
@@ -33,18 +32,18 @@ Você pode explorar este repositório navegando pelos diferentes diretórios cor
 
 Se você tiver alguma dúvida, comentário ou sugestão sobre minhas soluções ou este repositório, sinta-se à vontade para entrar em contato comigo. Estou aberto a colaborações e oportunidades de aprendizado conjunto!
 
-Email: julio.okuda@gmail.com
-LinkedIn: [LinkedIn](lhttps://www.linkedin.com/in/juliookuda/)
+Email: julio.okuda@gmail.com | 
+[LinkedIn](https://www.linkedin.com/in/juliookuda/)
 
 
 ## Resolução dos desafios:
 
-* **Aula01**: [Contribuindo em um Projeto Open Source no GitHub](https://github.com/Jcnok/Santander-Bootcamp-Ciencia-de-Dados-com-Python/tree/main/DP1#desafio-contribuindo-em-um-projeto-open-source-no-github);
-* **Aula02**: [Explorando um Pipeline de ETL com Python](https://github.com/Jcnok/Santander-Bootcamp-Ciencia-de-Dados-com-Python/tree/main/DP2#etl-e-an%C3%A1lise-de-gastos-dos-deputados-federais);
-* **Aula03**: [Equilibrando Saldo](https://github.com/Jcnok/Santander-Bootcamp-Ciencia-de-Dados-com-Python/tree/main/DCs#desafio-equilibrando-saldo);
-* **Aula04**: [Organizando seus Ativos](https://github.com/Jcnok/Santander-Bootcamp-Ciencia-de-Dados-com-Python/tree/main/DCs#desafio-organizando-seus-ativos);
-* **Aula05**: [Condicionalmente Rico](https://github.com/Jcnok/Santander-Bootcamp-Ciencia-de-Dados-com-Python/tree/main/DCs#desafio-condicionalmente-rico);
-* **Aula06**: [Juros Compostos](https://github.com/Jcnok/Santander-Bootcamp-Ciencia-de-Dados-com-Python/tree/main/DCs#desafio-juros-compostos);
-* **Aula07**: [O Grande Depósito](https://github.com/Jcnok/Santander-Bootcamp-Ciencia-de-Dados-com-Python/tree/main/DCs#desafio-o-grande-dep%C3%B3sito);
-* **Aula08**: [Criando um Relatório de Vendas Elegante com Power BI](https://github.com/Jcnok/Santander-Bootcamp-Ciencia-de-Dados-com-Python/tree/main/DP3#desafio-criando-um-relat%C3%B3rio-de-vendas-elegante-com-power-bi);
-* **Aula09**: [Processando e Transformando Dados com Power BI]("Em desenvolvimento");
+* **Aula01**: [Desafio-Cálculo de Bônus]();
+* **Aula02**: [TypeError, Type Check, Type Conversion, try-except e if]();
+* **Aula03**: [DEBUG, IF, FOR, While, Listas e Dicionários em Python]();
+* **Aula04**: [Type hint, Tipos complexos (Dicionários vs DataFrames Vs Tabelas Vs Excel) e Funções]();
+* **Aula05**: [Projeto 01-Um Bilhão de Linhas-> Desafio de Processamento de Dados com Python]();
+* **Aula06**: []();
+* **Aula07**: []();
+* **Aula08**: []();
+* **Aula09**: []();
