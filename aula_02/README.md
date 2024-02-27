@@ -63,6 +63,7 @@
 23. [Desenvolva uma calculadora simples que aceite duas entradas numéricas e um operador (+, -, *, /) do usuário. Use try-except para lidar com divisões por zero e entradas não numéricas. Utilize if-elif-else para realizar a operação matemática baseada no operador fornecido. Imprima o resultado ou uma mensagem de erro apropriada.](#ancora23)
 24. [Escreva um programa que solicite ao usuário para digitar um número. Utilize try-except para assegurar que a entrada seja numérica e utilize if-elif-else para classificar o número como "positivo", "negativo" ou "zero". Adicionalmente, identifique se o número é "par" ou "ímpar".](#ancora24)
 25. [Crie um script que solicite ao usuário uma lista de números separados por vírgula. O programa deve converter a string de entrada em uma lista de números inteiros. Utilize try-except para tratar a conversão de cada número e validar que cada elemento da lista convertida é um inteiro. Se a conversão falhar ou um elemento não for um inteiro, imprima uma mensagem de erro. Se a conversão for bem-sucedida para todos os elementos, imprima a lista de inteiros.dos pelo usuário são diferentes.](#ancora25)
+26. [Desafio - Refatorar o projeto da aula 01 evitando possíveis bugs!](#desafio)
 
 ### Exercícios Resolução
 
@@ -660,5 +661,100 @@ except ValueError as e:
 
 
     lista dos números inteiros: [2, 3, 4, 5]
+
+[voltar](#ancora).
+
+
+<a id="desafio"></a>
+## Desafio - Refatorar o projeto da aula 01 evitando possíveis bugs!
+![img](img/desafio2.png)
+
+```python
+
+def solicitar_nome() -> str:
+    """
+    Solicita ao usuário que insira seu nome.
+
+    Retorna:
+        str: O nome inserido pelo usuário.
+    """
+    try:
+        nome = input("Digite seu nome: ").strip()
+
+        if not nome:
+            raise ValueError("O nome não pode estar vazio.")
+        elif any(char.isdigit() for char in nome):
+            raise ValueError("O nome não deve conter números.")
+        
+        return nome
+    except ValueError as e:
+        print("Erro ao inserir nome:", e)
+        return solicitar_nome()
+
+
+def solicitar_salario() -> float:
+    """
+    Solicita ao usuário que insira o valor do salário.
+
+    Retorna:
+        float: O valor do salário inserido pelo usuário.
+    """
+    try:
+        salario = float(input("Digite o valor do seu salário: "))
+
+        if salario <= 0:
+            print("Por favor, digite um valor positivo para o salário.")
+            return solicitar_salario()
+
+        return salario
+    except ValueError:
+        print("Entrada inválida para o salário. Por favor, digite um número.")
+        return solicitar_salario()
+
+
+def solicitar_bonus() -> float:
+    """
+    Solicita ao usuário que insira o valor do bônus recebido.
+
+    Retorna:
+        float: O valor do bônus inserido pelo usuário.
+    """
+    try:
+        bonus_recebido = float(input("Digite o valor do bônus recebido: "))
+
+        if bonus_recebido < 0:
+            print("Por favor, digite um valor positivo para o bônus.")
+            return solicitar_bonus()
+
+        return bonus_recebido
+    except ValueError:
+        print("Entrada inválida para o bônus. Por favor, digite um número.")
+        return solicitar_bonus()
+
+
+def main():
+    """
+    Função principal do programa.
+    """
+    try:
+        # Solicita e valida o nome
+        nome = solicitar_nome()
+
+        # Solicita e valida o salário
+        salario = solicitar_salario()
+
+        # Solicita e valida o bônus
+        bonus_recebido = solicitar_bonus()
+
+        # Calcula o total
+        kpi = 1000 + salario * bonus_recebido  
+
+       
+        # Imprime as informações para o usuário
+        
+        print(f"{nome}, considerando seu salário de R${salario:.2f} o total com bônus é de R${kpi:.2f}.")
+    except Exception as e:
+        print("Ocorreu um erro:", e)
+```
 
 [voltar](#ancora).
