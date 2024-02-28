@@ -19,19 +19,6 @@ site.getsitepackages()
 
     Python 3.11.3
 
-
-## Como Executar
-1. Certifique-se de ter o Python instalado em sua máquina.
-* Este projeto utilizar a versão 3.11.3 do python.
-2. Clone ou baixe este repositório em sua máquina conforme o exemplo abaixo:
-`git clone https://github.com/Jcnok/bootcamp-jornada-de-dados_2024.git`
-
-3. Navegue até o diretório 'aula_03/src/' onde os exercicíos estão salvos confome o exemplo abaixo:
-`$ cd bootcamp-jornada-de-dados_2024/aula_03/src`
-
-* Exemplo de como executar o 'exercicio_01.py':
-`$ python exercicio_25.pyxercicio_01.py`
-
 # Aula 03: DEBUG, IF, FOR, While, Listas e Dicionários em Python
 
 ## Resolução dos Exercícios e Desafios
