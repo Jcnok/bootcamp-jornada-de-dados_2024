@@ -24,6 +24,38 @@ O Bootcamp oferece uma experiência abrangente e prática para desenvolvedores d
 - **Habilidade de Resolução de Problemas:** Os projetos desenvolvidos demonstram minha capacidade de resolver problemas e criar soluções eficazes.
 - **Comprometimento com o Aprendizado:** O compromisso em completar todos os exercícios, desafios e projetos do bootcamp reflete minha dedicação ao aprendizado e ao aprimoramento contínuo.
 
+Repositório Principal:
+```python
+'''
+├── README.md                # Documentação principal do projeto
+├── img/                     # Contém todas as imagens para o README
+├── pyproject.toml           # Configurações do projeto (por exemplo, dependências)
+├── aula_01/                 # Pasta da Aula 01
+│   ├── README.md            # Documentação da aula
+│   ├── img/                 # Imagens utilizadas na aula
+│   ├── src/                 # Código-fonte Python da aula
+│   ├── notebooks/           # Jupyter Notebooks da aula
+│   │   
+
+├── aula_02/                 # Pasta para a Aula 02
+│   ├── ... (mesma estrutura da aula_01)
+
+├── ...
+
+├── aula_40/                 # Pasta para a Aula 40
+│   ├── ... (mesma estrutura da aula_01)
+
+'''
+```
+## Como executar os scripts:
+**Opção 1:**
+1. Navegue até a pasta "src" da aula desejada.
+2. Execute o comando `python nome_do_arquivo.py` no terminal.
+
+**Opção 2:**
+1. Abra o Jupyter notebook na pasta "notebooks".
+2. Execute as células de código.
+
 ## Como Navegar Neste Repositório
 
 Você pode explorar este repositório navegando pelos diferentes diretórios correspondentes aos exercícios, desafios e projetos. Cada diretório contém arquivos com minhas soluções, juntamente com quaisquer instruções ou recursos adicionais fornecidos durante o bootcamp.
