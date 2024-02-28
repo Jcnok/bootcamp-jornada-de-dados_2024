@@ -1,23 +1,5 @@
 # Aula 02: TypeError, Type Check, Type Conversion, try-except e if
 
-## Como Executar
-
-1. Certifique-se de ter o Python instalado em sua máquina.
-* Este projeto utilizar a versão 3.11.3 do python.
-
-2. Clone ou baixe este repositório em sua máquina conforme o exemplo abaixo:
-
-`git clone https://github.com/Jcnok/bootcamp-jornada-de-dados_2024.git`
-
-3. Navegue até o diretório 'aula_02/src/' onde os exercicíos estão salvos confome o exemplo abaixo:
-
-`$ cd bootcamp-jornada-de-dados_2024/aula_02/src`
-
-5. Exemplo de como executar o 'exercicio_25.py':
-
-`$ python exercicio_25.py`
-
-
 ### Indice dos Exercícios
 <a id="ancora"></a>
 #### Inteiros (`int`)
