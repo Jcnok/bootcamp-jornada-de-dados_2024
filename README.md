@@ -48,9 +48,17 @@ Repositório Principal:
 '''
 ```
 ## Como executar os scripts:
+
+1. Certifique-se de ter o Python instalado em sua máquina.
+* Este projeto utilizar a versão 3.11.3 do python.
+2. Clone ou baixe este repositório em sua máquina conforme o exemplo abaixo:
+`git clone https://github.com/Jcnok/bootcamp-jornada-de-dados_2024.git`
+
 **Opção 1:**
 1. Navegue até a pasta "src" da aula desejada.
+* ex:`$ cd bootcamp-jornada-de-dados_2024/aula_03/src`
 2. Execute o comando `python nome_do_arquivo.py` no terminal.
+* ex:`$ python exercicio_25.pyxercicio_01.py`
 
 **Opção 2:**
 1. Abra o Jupyter notebook na pasta "notebooks".
@@ -72,7 +80,7 @@ Email: julio.okuda@gmail.com |
 
 * **Aula01**: [Desafio-Cálculo de Bônus](https://github.com/Jcnok/bootcamp-jornada-de-dados_2024/tree/main/aula_01#c%C3%A1lculo-de-b%C3%B4nus-com-entrada-do-usu%C3%A1rio);
 * **Aula02**: [TypeError, Type Check, Type Conversion, try-except e if](https://github.com/Jcnok/bootcamp-jornada-de-dados_2024/tree/main/aula_02#aula-02-typeerror-type-check-type-conversion-try-except-e-if);
-* **Aula03**: [DEBUG, IF, FOR, While, Listas e Dicionários em Python]();
+* **Aula03**: [DEBUG, IF, FOR, While, Listas e Dicionários em Python](https://github.com/Jcnok/bootcamp-jornada-de-dados_2024/tree/main/aula_03#aula-03-debug-if-for-while-listas-e-dicion%C3%A1rios-em-python);
 * **Aula04**: [Type hint, Tipos complexos (Dicionários vs DataFrames Vs Tabelas Vs Excel) e Funções]();
 * **Aula05**: [Projeto 01-Um Bilhão de Linhas-> Desafio de Processamento de Dados com Python]();
 * **Aula06**: []();
