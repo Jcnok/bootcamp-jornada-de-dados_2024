@@ -81,7 +81,7 @@ Email: julio.okuda@gmail.com |
 * **Aula01**: [Desafio-Cálculo de Bônus](https://github.com/Jcnok/bootcamp-jornada-de-dados_2024/tree/main/aula_01#c%C3%A1lculo-de-b%C3%B4nus-com-entrada-do-usu%C3%A1rio);
 * **Aula02**: [TypeError, Type Check, Type Conversion, try-except e if](https://github.com/Jcnok/bootcamp-jornada-de-dados_2024/tree/main/aula_02#aula-02-typeerror-type-check-type-conversion-try-except-e-if);
 * **Aula03**: [DEBUG, IF, FOR, While, Listas e Dicionários em Python](https://github.com/Jcnok/bootcamp-jornada-de-dados_2024/tree/main/aula_03#aula-03-debug-if-for-while-listas-e-dicion%C3%A1rios-em-python);
-* **Aula04**: [Type hint, Tipos complexos (Dicionários vs DataFrames Vs Tabelas Vs Excel) e Funções]();
+* **Aula04**: [Type hint, Tipos complexos (Dicionários vs DataFrames Vs Tabelas Vs Excel) e Funções](https://github.com/Jcnok/bootcamp-jornada-de-dados_2024/tree/main/aula_04#aula-04--type-hint-tipos-complexos-dicion%C3%A1rios-vs-dataframes-vs-tabelas-vs-excel-e-fun%C3%A7%C3%B5es);
 * **Aula05**: [Projeto 01-Um Bilhão de Linhas-> Desafio de Processamento de Dados com Python]();
 * **Aula06**: []();
 * **Aula07**: []();
