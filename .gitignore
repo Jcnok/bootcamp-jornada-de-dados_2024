@@ -160,3 +160,7 @@ cython_debug/
 #.idea/
 aula_05/data/measurements2.txt
 aula_05/data/measurements.txt
+aula_05/data/measurements.txt.hdf5
+aula_05/data/measurements.txt.yaml
+aula_05/data/measurements1.txt.hdf5
+aula_05/data/measurements1.txt.yaml
