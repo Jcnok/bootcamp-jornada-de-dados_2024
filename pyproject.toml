@@ -11,6 +11,10 @@ nbformat = "^5.9.2"
 pandas = "^2.2.1"
 polars = "^0.20.13"
 duckdb = "^0.10.0"
+blue = "^0.9.1"
+pyspark = "^3.5.1"
+dask = "^2024.2.1"
+dask-expr = "^0.5.3"
 
 
 [build-system]
