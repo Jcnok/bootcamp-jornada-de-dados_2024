@@ -1,7 +1,15 @@
-create_polars_df,30.272 segundos
-create_duckdb,18.398 segundos
-create_dask,6 minutos 31 segundos
-create_pyspark,3 minutos 6 segundos
-dc_read,56.523 segundos
-dask_cudf_1024,52.547 segundos
-dask_cudf_256,36.781 segundos
+polars_df,45.013 segundos
+duckdb_df,20.785 segundos
+dask_df,6 minutos 28 segundos
+pyspark_df,3 minutos 18 segundos
+dask_cudf_1024,1 minutos 53 segundos
+dask_cudf_256,42.466 segundospolars_df,42.374 segundos
+polars_df,40.264 segundos
+polars_df,36.045 segundos
+polars_df,48.000 segundos
+polars_df,52.647 segundos
+pandas_df,1.528 segundos
+pandas_df,0.592 segundos
+pandas_df,1 minutos 5 segundos
+pandas_df,1 minutos 6 segundos
+pandas_df,1 minutos 0 segundos
