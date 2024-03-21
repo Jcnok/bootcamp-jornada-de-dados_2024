@@ -13,3 +13,33 @@ pandas_df,0.592 segundos
 pandas_df,1 minutos 5 segundos
 pandas_df,1 minutos 6 segundos
 pandas_df,1 minutos 0 segundos
+polars_df,1 minutos 50 segundos
+polars_df,33.267 segundos
+cudf_pandas_df,12 minutos 21 segundos
+cudf_pandas_df,11 minutos 58 segundos
+duckdb_df,49.211 segundos
+duckdb_df,24.344 segundos
+duckdb_df,18.862 segundos
+create_duckdb,19.090 segundos
+dask_df,6 minutos 9 segundos
+pyspark_df,3 minutos 30 segundos
+pyspark_df,3 minutos 6 segundos
+pyspark_df,3 minutos 5 segundos
+dask_cudf_1024,2 minutos 41 segundos
+dask_cudf_1024,1 minutos 7 segundos
+dask_cudf_1024,59.819 segundos
+dask_cudf_1024,1 minutos 2 segundos
+dask_cudf_1024,58.965 segundos
+dask_cudf_256,1 minutos 3 segundos
+dask_cudf_256,1 minutos 9 segundos
+dask_cudf_256,1 minutos 25 segundos
+dask_cudf_256,1 minutos 39 segundos
+dask_cudf_256,2 minutos 11 segundos
+dask_cudf_256,5 minutos 17 segundos
+dask_cudf_256,2 minutos 49 segundos
+dask_cudf_256,1 minutos 56 segundos
+dask_cudf_1024,1 minutos 1 segundos
+dask_cudf_1024,2 minutos 16 segundos
+dask_cudf_1024,2 minutos 38 segundos
+dask_cudf_1024,3 minutos 42 segundos
+dask_cudf_1024,2 minutos 44 segundos
