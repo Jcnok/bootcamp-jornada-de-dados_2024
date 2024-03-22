@@ -24,10 +24,9 @@ def check_args(file_args):
 def build_weather_city_name_list():
     """
     Grabs the weather city names from example data provided in repo and dedups
-    """
-    ature': temperatures_gpu})
+    """    
 city_names = []
-    with open('data/weather_citys.csv', 'r') as file:ature': temperatures_gpu})
+    with open('data/weather_citys.csv', 'r') as file: 
 
         file_contents = file.read()
     for city in file_contents.splitlines():
@@ -103,7 +102,7 @@ def build_test_data(weather_city_names, num_rows_to_create):
                 
                 batch = random.choices(city_names_10k_max, k=batch_size)
                 prepped_deviated_batch = '\n'.join([f"{city};{random.uniform(coldest_temp, hottest_temp):.1f}" for city in batch]) # :.1f should quicker than round on a large scale, because round utilizes mathematical operation
-                file.write(prepped_deviated_batch + '\n')ature': temperatures_gpu})
+                file.write(prepped_deviated_batch + '\n')
 
                 
                 # Update progress bar every 1%
