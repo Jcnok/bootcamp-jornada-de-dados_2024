@@ -19,6 +19,7 @@ matplotlib = "^3.8.3"
 faker = "^24.2.0"
 tqdm = "^4.66.2"
 pyarrow = "14.0.1"
+tabulate = "^0.9.0"
 
 
 [build-system]
