@@ -7,7 +7,7 @@ from utils.decorators import timer_to_csv  # Importa o decorador
 CONCURRENCY = cpu_count()
 
 total_linhas = 1_000_000_000  # Total de linhas conhecido
-chunksize = 50_000_000  # Define o tamanho do chunk
+chunksize = 1_000_000  # Define o tamanho do chunk
 filename = "data/measurements.txt"  # Certifique-se de que este é o caminho correto para o arquivo
 
 

@@ -43,3 +43,15 @@ dask_cudf_1024,2 minutos 16 segundos
 dask_cudf_1024,2 minutos 38 segundos
 dask_cudf_1024,3 minutos 42 segundos
 dask_cudf_1024,2 minutos 44 segundos
+polars_df,1 minutos 27 segundos
+polars_df,2 minutos 8 segundos
+polars_df,47.205 segundos
+create_df_with_pandas,11 minutos 7 segundos
+create_df_with_pandas,13 minutos 20 segundos
+create_df_with_pandas,14 minutos 5 segundos
+create_df_with_pandas,12 minutos 19 segundos
+duckdb_df,1 minutos 34 segundos
+create_duckdb,29.727 segundos
+create_duckdb,19.372 segundos
+dask_df,7 minutos 41 segundos
+pyspark_df,3 minutos 29 segundos
