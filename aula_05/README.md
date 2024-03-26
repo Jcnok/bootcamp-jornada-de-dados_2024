@@ -54,20 +54,19 @@ Abaixo um índice como todas as etapas para resolução do projeto, desde inform
 1.  **[Decoradores](#ancora01)**
 2.  **[Scripts para gerar os dados.](#ancora02)**
 3.  **[Pandas - min, max e mean em 1 bilhão de linhas](#ancora03)**
-4.  **[Exercício 3: Filtragem de Logs por Severidade](#ancora04)**
-5.  **[Exercício 4: Validação de Dados de Entrada](#ancora05)**
-6.  **[Exercício 5: Detecção de Anomalias em Dados de Transações](#ancora05)**
-7.  **[Exercício 6: Contagem de Palavras em Textos](#ancora06)**
-8.  **[Exercício 7: Normalização de Dados](#ancora07)**
-9.  **[Exercício 8: Filtragem de Dados Faltantes](#ancora08)**
-10.  **[Exercício 9: Extração de Subconjuntos de Dados](#ancora09)**
-11. **[Exercício 10: Agregação de Dados por Categoria](#ancora10)**
-12. **[Exercício 11:  Leitura de Dados até Flag](#ancora11)**
-13. **[Exercício 12: Validação de Entrada](#ancora12)**
-14. **[Exercício 13: Consumo de API Simulado](#ancora13)**
-15. **[Exercício 14: Tentativas de Conexão](#ancora14)**
-16. **[Exercício 15: Processamento de Dados com Condição de Parada](#ancora15)**
-17. **[Desafio : Estruturas de Controle de Fluxo](#desafio)**
+4.  **[Polars - min, max e mean em 1 bilhão de linhas](#ancora04)**
+5.  **[Duckdb - min, max e mean em 1 bilhão de linhas](#ancora05)**
+6.  **[Dask - min, max e mean em 1 bilhão de linhas](#ancora06)**
+7.  **[Pyspark - min, max e mean em 1 bilhão de linhas.](#ancora07)**
+8.  **[desenvolvimento](#ancora08)**
+9.  **[desenvolvimento](#ancora09)**
+10. **[desenvolvimento](#ancora10)**
+11. **[desenvolvimento](#ancora11)**
+12. **[desenvolvimento](#ancora12)**
+13. **[desenvolvimento](#ancora13)**
+14. **[desenvolvimento](#ancora14)**
+15. **[desenvolvimento](#ancora15)**
+16. **[desenvolvimento](#desafio)**
 
 
 <a id="ancora01"></a>
@@ -336,6 +335,8 @@ $`python data_generate.py`#para criar os dados na pasta 'data/mesurements.txt'
 
 * **Agora com os dados de 1 bilhao gerados vamos ver quem se sai melhor para as configuracoes da minha maquina**.
 
+[voltar](#voltar)
+
 <a id="ancora03"></a>
 ## Pandas - min, max e mean em 1 bilhão de linhas
 
@@ -467,6 +468,9 @@ if __name__ == "__main__":
      
 ```
 
+[voltar](#voltar)
+
+<a id="ancora04"></a>
 ## Polars - min, max e mean em 1 bilhão de linhas
 
 
@@ -579,6 +583,9 @@ if __name__ == "__main__":
     Overwriting src/polars_df.py
 
 
+[voltar](#voltar)
+
+<a id="ancora05"></a>
 ## Duckdb - min, max e mean em 1 bilhão de linhas
 
 
@@ -673,6 +680,9 @@ if __name__ == "__main__":
     Overwriting src/duckdb_df.py
 
 
+[voltar](#voltar)
+
+<a id="ancora06"></a>
 ## Dask - min, max e mean em 1 bilhão de linhas
 
 
@@ -782,6 +792,9 @@ if __name__ == "__main__":
     Writing src/dask_df.py
 
 
+[voltar](#voltar)
+
+<a id="ancora07"></a>
 ## Pyspark - min, max e mean em 1 bilhão de linhas.
 
 
@@ -935,6 +948,8 @@ if __name__ == "__main__":
 
     Writing src/pyspark_df.py
 
+
+[voltar](#voltar)
 
 ## Vaex - min, max e mean em 1 bilhão de linhas.
 
@@ -3844,7 +3859,7 @@ plt.show()
 
 
     
-![png](img/output_173_0.png)
+![png](output_179_0.png)
     
 
 
