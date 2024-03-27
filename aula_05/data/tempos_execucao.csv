@@ -1,5 +1,9 @@
-polars_df,0.376 segundos
 create_duckdb,0.798 segundos
 dask_df,0.767 segundos
 pyspark_df,14.083 segundos
-vaex_df,1.049 segundosdask_df,1.649 segundos
+create_df_with_pandas,1.379 segundos
+polars_df,0.272 segundos
+vaex_df,1.045 segundos
+cudf_pandas_df,0.797 segundos
+dask_cudf_256,2.967 segundos
+dask_cudf_1024,5.224 segundos
