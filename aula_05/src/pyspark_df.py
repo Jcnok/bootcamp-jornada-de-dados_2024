@@ -4,14 +4,14 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, min as spark_min, max as spark_max, avg as spark_avg, round as spark_round
 
 @timer_to_csv
-def pyspark_df():     
+def pyspark_df(filename):     
     # Inicializar uma sessão Spark
     spark = SparkSession.builder \
         .appName("Temperature Analysis") \
         .getOrCreate()
     
     # Ler o arquivo CSV diretamente em um DataFrame Spark
-    df = spark.read.option("header", "false").option("delimiter", ";").csv("data/measurements.txt") \
+    df = spark.read.option("header", "false").option("delimiter", ";").csv(filename) \
         .toDF("City", "Temperature")
     
     # Converter a coluna 'Temperature' para tipo numérico
@@ -33,4 +33,5 @@ def pyspark_df():
     spark.stop()
 
 if __name__ == "__main__":
-    pyspark_df()  
+    filename = "data/measurements_pandas.txt"
+    pyspark_df(filename)  
