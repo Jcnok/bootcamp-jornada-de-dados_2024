@@ -1,5 +1,6 @@
 # Polars => script para caluclar min, max e mean em um bilhão de linhas.
 from utils.decorators import timer_to_csv
+from config import PATH, NUM_ROWS
 import polars as pl
 
 def get_total_lines(num_rows_path):
@@ -10,7 +11,7 @@ def get_total_lines(num_rows_path):
 @timer_to_csv
 def polars_df(filename, num_rows_path):
     total_linhas = get_total_lines(num_rows_path)
-    chunksize = total_linhas // 10 + (1 if total_linhas % 10 else 0)  # Define o tamanho do chunk
+    chunksize = total_linhas // 200 + (1 if total_linhas % 10 else 0)  # Define o tamanho do chunk
 
     pl.Config.set_streaming_chunk_size(chunksize)
 
@@ -25,8 +26,8 @@ def polars_df(filename, num_rows_path):
            )
 
 if __name__ == "__main__":  
-    num_rows_path= "data/num_rows.txt"
-    filename = "data/measurements_pandas.txt" 
+    num_rows_path= NUM_ROWS
+    filename = PATH 
     df = polars_df(filename, num_rows_path)
     print(df)
 

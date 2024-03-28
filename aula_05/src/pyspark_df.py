@@ -1,6 +1,7 @@
 # Pyspark => script para caluclar min, max e mean em um bilhão de linhas.
 from utils.decorators import timer_to_csv
 from pyspark.sql import SparkSession
+from config import PATH
 from pyspark.sql.functions import col, min as spark_min, max as spark_max, avg as spark_avg, round as spark_round
 
 @timer_to_csv
@@ -33,5 +34,5 @@ def pyspark_df(filename):
     spark.stop()
 
 if __name__ == "__main__":
-    filename = "data/measurements_pandas.txt"
+    filename = PATH
     pyspark_df(filename)  

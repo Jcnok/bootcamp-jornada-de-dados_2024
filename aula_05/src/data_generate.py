@@ -4,7 +4,7 @@
 import os
 import sys
 import random
-import timen
+import time
 
 
 def check_args(file_args):
@@ -25,8 +25,8 @@ def build_weather_city_name_list():
     """
     Grabs the weather city names from example data provided in repo and dedups
     """    
-city_names = []
-    with open('data/weather_citys.csv', 'r') as file: 
+    city_names = []
+    with open('./data/weather_stations.csv', 'r') as file: 
 
         file_contents = file.read()
     for city in file_contents.splitlines():
@@ -96,7 +96,7 @@ def build_test_data(weather_city_names, num_rows_to_create):
     print('Building test data...')
 
     try:
-        with open("data/measurements.txt", 'w') as file:
+        with open("./data/measurements.txt", 'w') as file:
             progress = 0
             for chunk in range(chunks):
                 
@@ -119,7 +119,7 @@ def build_test_data(weather_city_names, num_rows_to_create):
     
     end_time = time.time()
     elapsed_time = end_time - start_time
-    file_size = os.path.getsize("../data/measurements.txt")
+    file_size = os.path.getsize("./data/measurements.txt")
     human_file_size = convert_bytes(file_size)
  
     print("Test data successfully written to data/measurements.txt")

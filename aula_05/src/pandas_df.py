@@ -1,12 +1,10 @@
+#pandas => script para caluclar min, max e mean em um bilhão de linhas.
 import pandas as pd 
-import time
 from multiprocessing import Pool, cpu_count
-from utils.decorators import timer_to_csv  # Importa o decorador
-#from tabulate import tabulate
+from config import PATH, NUM_ROWS
+from utils.decorators import timer_to_csv  
 
 CONCURRENCY = cpu_count()
-
-filename = "data/measurements_pandas.txt"  # Certifique-se de que este é o caminho correto para o arquivo
 
 def get_total_lines(num_rows_path):
     with open(num_rows_path, 'r') as f:
@@ -21,7 +19,7 @@ def process_chunk(chunk):
 @timer_to_csv  # Aplica o decorador
 def create_df_with_pandas(filename, num_rows_path):
     total_linhas = get_total_lines(num_rows_path)
-    chunksize = total_linhas // 10 + (1 if total_linhas % 10 else 0)  # Define o tamanho do chunk
+    chunksize = total_linhas // 200 + (1 if total_linhas % 10 else 0)  # Define o tamanho do chunk
     with pd.read_csv(filename, sep=';', header=None, names=['city', 'temp'], chunksize=chunksize) as reader:
         with Pool(CONCURRENCY) as pool:
             results = []
@@ -41,8 +39,8 @@ def create_df_with_pandas(filename, num_rows_path):
 
 if __name__ == "__main__":    
     print("Iniciando o processamento do arquivo.")
-    num_rows_path= "data/num_rows.txt"
-    filename = "data/measurements_pandas.txt"     
+    num_rows_path= NUM_ROWS
+    filename = PATH     
     df = create_df_with_pandas(filename, num_rows_path)
     #print(tabulate(df, headers='keys', tablefmt='pretty'))
     print(df)

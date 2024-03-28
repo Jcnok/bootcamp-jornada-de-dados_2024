@@ -1,5 +1,6 @@
 # Vaex => script para caluclar min, max e mean.
 from utils.decorators import timer_to_csv
+from config import PATH
 import vaex
 @timer_to_csv
 def vaex_df(filename):
@@ -16,5 +17,5 @@ def vaex_df(filename):
     return print(combined_results)
    
 if __name__ == "__main__":
-    filename = "data/measurements_pandas.txt"
+    filename = PATH
     vaex_df(filename)

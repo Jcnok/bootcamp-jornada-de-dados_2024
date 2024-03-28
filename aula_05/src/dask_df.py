@@ -1,5 +1,6 @@
 # Dask => script para caluclar min, max e mean em um bilhão de linhas.
 from utils.decorators import timer_to_csv
+from config import PATH
 import dask
 dask.config.set({'dataframe.query-planning': True})
 import dask.dataframe as dd
@@ -14,5 +15,5 @@ def dask_df(filename):
                    compute().round(2).sort_index())
 
 if __name__ == "__main__":
-    filename = "data/measurements_pandas.txt"
+    filename = PATH
     dask_df(filename)
