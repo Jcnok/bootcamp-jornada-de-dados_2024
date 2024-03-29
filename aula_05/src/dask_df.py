@@ -1,6 +1,6 @@
 # Dask => script para caluclar min, max e mean em um bilhão de linhas.
 from utils.decorators import timer_to_csv
-from config import PATH
+from utils.config import PATH
 import dask
 dask.config.set({'dataframe.query-planning': True})
 import dask.dataframe as dd

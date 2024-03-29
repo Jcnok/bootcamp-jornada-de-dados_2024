@@ -1,6 +1,6 @@
 # Vaex => script para caluclar min, max e mean.
 from utils.decorators import timer_to_csv
-from config import PATH
+from utils.config import PATH
 import vaex
 @timer_to_csv
 def vaex_df(filename):

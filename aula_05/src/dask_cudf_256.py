@@ -2,6 +2,7 @@
 from dask.distributed import Client
 from dask_cuda import LocalCUDACluster
 from utils.decorators import timer_to_csv
+from utils.config import PATH
 import dask_cudf as dc
 
 @timer_to_csv
@@ -19,5 +20,5 @@ def dask_cudf_256(filename):
         result = df.groupby('city').agg({'temp': ['max','min','mean']}).compute().sort_index()
         print(result)
 if __name__ == "__main__":
-    filename= 'data/measurements_pandas.txt'
+    filename= PATH
     dask_cudf_256(filename)

@@ -1,7 +1,7 @@
 #pandas => script para caluclar min, max e mean em um bilhão de linhas.
 import pandas as pd 
 from multiprocessing import Pool, cpu_count
-from config import PATH, NUM_ROWS
+from utils.config import PATH, NUM_ROWS
 from utils.decorators import timer_to_csv  
 
 CONCURRENCY = cpu_count()
@@ -17,7 +17,7 @@ def process_chunk(chunk):
     return aggregated
 
 @timer_to_csv  # Aplica o decorador
-def create_df_with_pandas(filename, num_rows_path):
+def pandas_df(filename, num_rows_path):
     total_linhas = get_total_lines(num_rows_path)
     chunksize = total_linhas // 200 + (1 if total_linhas % 10 else 0)  # Define o tamanho do chunk
     with pd.read_csv(filename, sep=';', header=None, names=['city', 'temp'], chunksize=chunksize) as reader:
@@ -41,8 +41,6 @@ if __name__ == "__main__":
     print("Iniciando o processamento do arquivo.")
     num_rows_path= NUM_ROWS
     filename = PATH     
-    df = create_df_with_pandas(filename, num_rows_path)
+    df = pandas_df(filename, num_rows_path)
     #print(tabulate(df, headers='keys', tablefmt='pretty'))
-    print(df)
- 
-    
+    print(df)    

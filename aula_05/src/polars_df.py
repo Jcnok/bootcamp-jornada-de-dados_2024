@@ -1,6 +1,6 @@
 # Polars => script para caluclar min, max e mean em um bilhão de linhas.
 from utils.decorators import timer_to_csv
-from config import PATH, NUM_ROWS
+from utils.config import PATH, NUM_ROWS
 import polars as pl
 
 def get_total_lines(num_rows_path):

@@ -1,6 +1,7 @@
 # Script usando cudf == pandas mas rápido pq usa a GPU, porém a mem não suport procesar 1bilhão.
 import cudf
 from utils.decorators import timer_to_csv
+from utils.config import PATH
 @timer_to_csv
 def cudf_pandas(filename):
     
@@ -17,5 +18,5 @@ def cudf_pandas(filename):
     return print(result)
 
 if __name__ == "__main__":
-    filename = "data/measurements_pandas.txt"
-    cudf_pandas(filename)
+    filename = PATH
+    cudf_pandas(filename)    

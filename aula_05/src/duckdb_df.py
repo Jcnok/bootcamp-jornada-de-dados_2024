@@ -1,10 +1,10 @@
 # Duckdb => script para caluclar min, max e mean.
 from utils.decorators import timer_to_csv
-from config import PATH
+from utils.config import PATH
 import duckdb
 
 @timer_to_csv
-def create_duckdb(filename):
+def duckdb_df(filename):
     conn = duckdb.connect(':memory:')
     query = f"""
             SELECT city,
@@ -19,5 +19,4 @@ def create_duckdb(filename):
 
 if __name__ == "__main__":
     filename = PATH 
-    create_duckdb(filename)
-  
+    duckdb_df(filename) 
