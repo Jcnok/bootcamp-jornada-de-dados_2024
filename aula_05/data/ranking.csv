@@ -1,0 +1,5 @@
+polars_df,38.492 segundos
+create_df_with_pandas,9 minutos 13 segundos
+pyspark_df,3 minutos 37 segundos
+create_duckdb,52.491 segundos
+dask_df,6 minutos 38 segundos
