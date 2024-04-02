@@ -1,2 +1,2 @@
-PATH = 'data/measurements_pandas.txt'
+PATH = 'data/measurements.txt'
 NUM_ROWS = 'data/num_rows.txt'

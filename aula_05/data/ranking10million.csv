@@ -1,0 +1,9 @@
+pandas_df,11.157 segundos
+polars_df,0.927 segundos
+duckdb_df,1.157 segundos
+dask_df,5.205 segundos
+pyspark_df,20.250 segundos
+vaex_df,6.932 segundos
+cudf_pandas,0.820 segundos
+dask_cudf_1024,5.621 segundos
+dask_cudf_256,5.526 segundos
