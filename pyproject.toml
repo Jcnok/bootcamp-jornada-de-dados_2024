@@ -18,6 +18,9 @@ pyspark = "^3.5.1"
 vaex = "^4.17.0"
 matplotlib = "^3.8.3"
 dask-expr = "^1.0.5"
+flake8 = "^7.0.0"
+black = "^24.3.0"
+isort = "^5.13.2"
 
 
 [build-system]
