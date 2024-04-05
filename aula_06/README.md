@@ -150,10 +150,10 @@ if __name__ == "__main__":
 ```python
 !flake8 src/exemplo01.py
 ```
-
+```HTML
     [1msrc/exemplo01.py[m[36m:[m1[36m:[m17[36m:[m [1m[31mE211[m whitespace before '('
     [1msrc/exemplo01.py[m[36m:[m4[36m:[m1[36m:[m [1m[31mE305[m expected 2 blank lines after class or function definition, found 0
-
+```
 
 * Veja que interessante o flake8 já notificou 2 erros, vamos corrigir:
     * Ele informa que na linha 1  e caracter 17 existe um espaço antes do '(' -> será corrigido
@@ -216,12 +216,12 @@ if __name__ == "__main__":
 ```python
 !black src/exemplo02.py
 ```
-
+<span>
     [1mreformatted src/exemplo02.py[0m
 
     [1mAll done! ✨ 🍰 ✨[0m
     [34m[1m1 file [0m[1mreformatted[0m.
-
+</span>
 
 * Vamos abrir o arquivo e verificar o que ele formatou:
 
