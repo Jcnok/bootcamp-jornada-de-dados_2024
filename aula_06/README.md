@@ -150,9 +150,9 @@ if __name__ == "__main__":
 ```python
 !flake8 src/exemplo01.py
 ```
-```HTML
-    [1msrc/exemplo01.py[m[36m:[m1[36m:[m17[36m:[m [1m[31mE211[m whitespace before '('
-    [1msrc/exemplo01.py[m[36m:[m4[36m:[m1[36m:[m [1m[31mE305[m expected 2 blank lines after class or function definition, found 0
+```
+src/exemplo01.py:1:17: E211 whitespace before '('
+src/exemplo01.py:4:1: E305 expected 2 blank lines after class or function definition, found 0
 ```
 
 * Veja que interessante o flake8 já notificou 2 erros, vamos corrigir:
@@ -712,6 +712,7 @@ if __name__ == "__main__":
 ```python
 !task format src/exemplo_com_tasks.py
 ```
+```
 Fixing /home/jcnok/bootcamps/bootcamp-jornada-de-dados_2024/aula_06/src/exemplo_com_tasks.py
 Skipping .ipynb files as Jupyter dependencies are not installed.
 You can fix this by running ``pip install "black[jupyter]"``
@@ -719,7 +720,7 @@ reformatted /home/jcnok/bootcamps/bootcamp-jornada-de-dados_2024/aula_06/src/exe
 
 All done! ✨ 🍰 ✨
 1 file reformatted, 4 files left unchanged.
-
+```
 
 * **Conferindo como ficou:**
 
@@ -832,7 +833,6 @@ O arquivo `.pre-commit-config.yaml` contém a configuração do pre-commit para 
 - **pycqa/isort**: Este repositório contém o hook do isort, uma ferramenta para organizar os imports de módulos em arquivos Python de acordo com as convenções de importação do Python.
 
 - **pycqa/flake8**: Este repositório contém o hook do Flake8, uma ferramenta de verificação de código Python que verifica a conformidade com as diretrizes de estilo do PEP 8 e identifica possíveis problemas no código-fonte.
-```
 
 Em resumo vamos usar essas ferramentas e verificações configuradas no arquivo `.pre-commit-config.yaml` para garantir a qualidade do código em um projeto Python.
 
@@ -886,24 +886,24 @@ if __name__ == "__main__":
 ```python
 !git status
 ```
+```
+On branch main
+Your branch is up to date with 'origin/main'.
 
-    On branch main
-    Your branch is up to date with 'origin/main'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   notebook/aula_06.ipynb
+	modified:   ../poetry.lock
+	modified:   ../pyproject.toml
 
-    Changes not staged for commit:
-      (use "git add <file>..." to update what will be committed)
-      (use "git restore <file>..." to discard changes in working directory)
-    	[31mmodified:   notebook/aula_06.ipynb[m
-    	[31mmodified:   ../poetry.lock[m
-    	[31mmodified:   ../pyproject.toml[m
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	src/exemplo_com_pre-commit.py
+	src/exemplo_com_tasks.py
 
-    Untracked files:
-      (use "git add <file>..." to include in what will be committed)
-    	[31msrc/exemplo_com_pre-commit.py[m
-    	[31msrc/exemplo_com_tasks.py[m
-
-    no changes added to commit (use "git add" and/or "git commit -a")
-
+no changes added to commit (use "git add" and/or "git commit -a")
+```
 
 
 ```python
