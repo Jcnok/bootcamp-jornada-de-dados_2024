@@ -216,12 +216,10 @@ if __name__ == "__main__":
 ```python
 !black src/exemplo02.py
 ```
-<span>
-    [1mreformatted src/exemplo02.py[0m
+reformatted src/exemplo02.py
 
-    [1mAll done! ✨ 🍰 ✨[0m
-    [34m[1m1 file [0m[1mreformatted[0m.
-</span>
+All done! ✨ 🍰 ✨
+1 file reformatted.
 
 * Vamos abrir o arquivo e verificar o que ele formatou:
 
@@ -281,11 +279,10 @@ if __name__=="__main__":
 ```python
 !black src/conflito_entre_black_e_flake8.py
 ```
+reformatted src/conflito_entre_black_e_flake8.py
 
-    [1mreformatted src/conflito_entre_black_e_flake8.py[0m
-
-    [1mAll done! ✨ 🍰 ✨[0m
-    [34m[1m1 file [0m[1mreformatted[0m.
+All done! ✨ 🍰 ✨
+1 file reformatted.
 
 
 
@@ -318,10 +315,9 @@ if __name__ == "__main__":
 ```python
 !flake8 src/conflito_entre_black_e_flake8.py
 ```
-
-    [1msrc/conflito_entre_black_e_flake8.py[m[36m:[m2[36m:[m80[36m:[m [1m[31mE501[m line too long (82 > 79 characters)
-    [1msrc/conflito_entre_black_e_flake8.py[m[36m:[m7[36m:[m80[36m:[m [1m[31mE501[m line too long (82 > 79 characters)
-    [1msrc/conflito_entre_black_e_flake8.py[m[36m:[m14[36m:[m80[36m:[m [1m[31mE501[m line too long (85 > 79 characters)
+src/conflito_entre_black_e_flake8.py:2:80: E501 line too long (82 > 79 characters)
+src/conflito_entre_black_e_flake8.py:7:80: E501 line too long (82 > 79 characters)
+src/conflito_entre_black_e_flake8.py:14:80: E501 line too long (85 > 79 characters)
 
 
 * Ué mas o black não realizou as correções e nos informou que já estava tudo certo?
@@ -464,11 +460,10 @@ if __name__ == "__main__":
 ```python
 !black src/exemplo_isort.py
 ```
+reformatted src/exemplo_isort.py
 
-    [1mreformatted src/exemplo_isort.py[0m
-
-    [1mAll done! ✨ 🍰 ✨[0m
-    [34m[1m1 file [0m[1mreformatted[0m.
+All done! ✨ 🍰 ✨
+1 file reformatted.
 
 
 
@@ -717,14 +712,13 @@ if __name__ == "__main__":
 ```python
 !task format src/exemplo_com_tasks.py
 ```
+Fixing /home/jcnok/bootcamps/bootcamp-jornada-de-dados_2024/aula_06/src/exemplo_com_tasks.py
+Skipping .ipynb files as Jupyter dependencies are not installed.
+You can fix this by running ``pip install "black[jupyter]"``
+reformatted /home/jcnok/bootcamps/bootcamp-jornada-de-dados_2024/aula_06/src/exemplo_com_tasks.py
 
-    Fixing /home/jcnok/bootcamps/bootcamp-jornada-de-dados_2024/aula_06/src/exemplo_com_tasks.py
-    [1mSkipping .ipynb files as Jupyter dependencies are not installed.
-    You can fix this by running ``pip install "black[jupyter]"``[0m
-    [1mreformatted /home/jcnok/bootcamps/bootcamp-jornada-de-dados_2024/aula_06/src/exemplo_com_tasks.py[0m
-
-    [1mAll done! ✨ 🍰 ✨[0m
-    [34m[1m1 file [0m[1mreformatted[0m, [34m4 files [0mleft unchanged.
+All done! ✨ 🍰 ✨
+1 file reformatted, 4 files left unchanged.
 
 
 * **Conferindo como ficou:**
@@ -922,89 +916,84 @@ if __name__ == "__main__":
 #conferindo se foi adicionado.
 !git status
 ```
+```
+On branch main
+Your branch is up to date with 'origin/main'.
 
-    On branch main
-    Your branch is up to date with 'origin/main'.
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   src/exemplo_com_pre-commit.py
 
-    Changes to be committed:
-      (use "git restore --staged <file>..." to unstage)
-    	[32mnew file:   src/exemplo_com_pre-commit.py[m
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   notebook/aula_06.ipynb
+	modified:   ../poetry.lock
+	modified:   ../pyproject.toml
 
-    Changes not staged for commit:
-      (use "git add <file>..." to update what will be committed)
-      (use "git restore <file>..." to discard changes in working directory)
-    	[31mmodified:   notebook/aula_06.ipynb[m
-    	[31mmodified:   ../poetry.lock[m
-    	[31mmodified:   ../pyproject.toml[m
-
-    Untracked files:
-      (use "git add <file>..." to include in what will be committed)
-    	[31msrc/exemplo_com_tasks.py[m
-
-
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	src/exemplo_com_tasks.py
+```
 
 
 ```python
 #Commitando o arquivo
 !git commit -m "add:exemplo de pre-commit simples"
 ```
+```
+[WARNING] Unstaged files detected.
+[INFO] Stashing unstaged files to /home/jcnok/.cache/pre-commit/patch1712286549-259038.
+trim trailing whitespace.................................................Passed
+fix end of files.........................................................Passed
+check yaml...........................................(no files to check)Skipped
+check toml...........................................(no files to check)Skipped
+detect private key.......................................................Passed
+check for added large files..............................................Passed
+black....................................................................Failed
+- hook id: black
+- files were modified by this hook
 
-    [43;30m[WARNING][m Unstaged files detected.
-    [INFO][m Stashing unstaged files to /home/jcnok/.cache/pre-commit/patch1712286549-259038.
-    trim trailing whitespace.................................................[42mPassed[m
-    fix end of files.........................................................[42mPassed[m
-    check yaml...........................................(no files to check)[46;30mSkipped[m
-    check toml...........................................(no files to check)[46;30mSkipped[m
-    detect private key.......................................................[42mPassed[m
-    check for added large files..............................................[42mPassed[m
-    black....................................................................[41mFailed[m
-    [2m- hook id: black[m
-    [2m- files were modified by this hook[m
+reformatted aula_06/src/exemplo_com_pre-commit.py
 
-    [1mreformatted aula_06/src/exemplo_com_pre-commit.py[0m
+All done! ✨ 🍰 ✨
+1 file reformatted.
 
-    [1mAll done! ✨ 🍰 ✨[0m
-    [34m[1m1 file [0m[1mreformatted[0m.
+isort (python)...........................................................Failed
+- hook id: isort
+- files were modified by this hook
 
-    isort (python)...........................................................[41mFailed[m
-    [2m- hook id: isort[m
-    [2m- files were modified by this hook[m
+Fixing /home/jcnok/bootcamps/bootcamp-jornada-de-dados_2024/aula_06/src/exemplo_com_pre-commit.py
 
-    Fixing /home/jcnok/bootcamps/bootcamp-jornada-de-dados_2024/aula_06/src/exemplo_com_pre-commit.py
-
-    flake8...................................................................[42mPassed[m
-    [INFO][m Restored changes from /home/jcnok/.cache/pre-commit/patch1712286549-259038.
-
-
+flake8...................................................................Passed
+[INFO] Restored changes from /home/jcnok/.cache/pre-commit/patch1712286549-259038.
+```
 * **Observe que o black encontrou divergências e não aprovou o commit, porém ele próprio se encarregou de corrigir agora irei realizar um novo commit e garantir a aprovação:**
-
 
 ```python
 !git status
 ```
+```
+On branch main
+Your branch is up to date with 'origin/main'.
 
-    On branch main
-    Your branch is up to date with 'origin/main'.
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   src/exemplo_com_pre-commit.py
 
-    Changes to be committed:
-      (use "git restore --staged <file>..." to unstage)
-    	[32mnew file:   src/exemplo_com_pre-commit.py[m
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   notebook/aula_06.ipynb
+	modified:   src/exemplo_com_pre-commit.py
+	modified:   ../poetry.lock
+	modified:   ../pyproject.toml
 
-    Changes not staged for commit:
-      (use "git add <file>..." to update what will be committed)
-      (use "git restore <file>..." to discard changes in working directory)
-    	[31mmodified:   notebook/aula_06.ipynb[m
-    	[31mmodified:   src/exemplo_com_pre-commit.py[m
-    	[31mmodified:   ../poetry.lock[m
-    	[31mmodified:   ../pyproject.toml[m
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	src/exemplo_com_tasks.py
 
-    Untracked files:
-      (use "git add <file>..." to include in what will be committed)
-    	[31msrc/exemplo_com_tasks.py[m
-
-
-
-
+```
 ```python
 !git add src/exemplo_com_pre-commit.py
 ```
@@ -1013,23 +1002,23 @@ if __name__ == "__main__":
 ```python
 !git commit -m "update:exemplo corrigido pelo pre-commit"
 ```
-
-    [43;30m[WARNING][m Unstaged files detected.
-    [INFO][m Stashing unstaged files to /home/jcnok/.cache/pre-commit/patch1712286803-259694.
-    trim trailing whitespace.................................................[42mPassed[m
-    fix end of files.........................................................[42mPassed[m
-    check yaml...........................................(no files to check)[46;30mSkipped[m
-    check toml...........................................(no files to check)[46;30mSkipped[m
-    detect private key.......................................................[42mPassed[m
-    check for added large files..............................................[42mPassed[m
-    black....................................................................[42mPassed[m
-    isort (python)...........................................................[42mPassed[m
-    flake8...................................................................[42mPassed[m
-    [INFO][m Restored changes from /home/jcnok/.cache/pre-commit/patch1712286803-259694.
-    [main e9a5bd2] update:exemplo corrigido pelo pre-commit
-     1 file changed, 31 insertions(+)
-     create mode 100644 aula_06/src/exemplo_com_pre-commit.py
-
+```
+[WARNING] Unstaged files detected.
+[INFO] Stashing unstaged files to /home/jcnok/.cache/pre-commit/patch1712286803-259694.
+trim trailing whitespace.................................................Passed
+fix end of files.........................................................Passed
+check yaml...........................................(no files to check)Skipped
+check toml...........................................(no files to check)Skipped
+detect private key.......................................................Passed
+check for added large files..............................................Passed
+black....................................................................Passed
+isort (python)...........................................................Passed
+flake8...................................................................Passed
+[INFO] Restored changes from /home/jcnok/.cache/pre-commit/patch1712286803-259694.
+[main e9a5bd2] update:exemplo corrigido pelo pre-commit
+ 1 file changed, 31 insertions(+)
+ create mode 100644 aula_06/src/exemplo_com_pre-commit.py
+```
 
 * **Desta forma conseguimos garantir que a squad irá manter a qualidade no desenvolvimento de todo o projeto, garantindo as boas práticas que foi definido com o time.**
 * **O pre-commit pode ser utilizado para padronizar o formato dos commits, para verificação de segurança, padronização e qualidade de código entre outras, vale muito estudar toda a documentação.**
