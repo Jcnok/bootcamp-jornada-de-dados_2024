@@ -4,8 +4,16 @@ import os
 from typing import List
 
 import pandas as pd
+import pandera as pa
+
+from utils.log_decorator import log_decorator
+from utils.schema import VendasSchema
+
+# importando os decorators
+from utils.timer_decorator import timer
 
 
+@pa.check_output(VendasSchema)
 def ler_arquivos_json(path_origin: str) -> pd.DataFrame:
     caminho_arquivos = os.path.join(path_origin, "*.json")
     arquivos_json = glob.glob(caminho_arquivos)
@@ -38,6 +46,8 @@ def carregar_dataframe(
             )
 
 
+@log_decorator
+@timer
 def pipeline(path_origin: str, path_to_save: str, format_to_save: List[str]) -> None:
     df = ler_arquivos_json(path_origin)
     df = transformar_dataframe(df)
