@@ -1,5 +1,19 @@
 # decorator para registro de logs
+from functools import wraps
+from sys import stderr
+
 from loguru import logger
+
+# Removendo os handlers existentes para evitar duplicação
+logger.remove()
+
+# Configuração do logger para stderr
+logger.add(
+    sink=stderr, format="{time} <r>{level}</r> <g>{message}</g> {file}", level="INFO"
+)
+
+# Configuração do logger para arquivo de log
+logger.add("log/app.log", format="{time} {level} {message} {file}", level="INFO")
 
 
 def log_decorator(func):
@@ -13,6 +27,7 @@ def log_decorator(func):
         callable: Função decorada.
     """
 
+    @wraps(func)
     def wrapper(*args, **kwargs):
         """
         Função interna que envolve a função original e realiza o registro.
