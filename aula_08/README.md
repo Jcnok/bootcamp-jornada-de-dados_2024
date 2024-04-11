@@ -79,7 +79,7 @@ logger.critical("Esta é uma mensagem crítica")
 
 ```
 
-![img](../img/loguru_basic.png)
+![img](./img/loguru_basic.png)
 
 * **Agora vamos acessar o arquivo app.log e conferir que ele só salvou os logs de level "WARNING".**
 
@@ -110,7 +110,7 @@ logger.add("log/app.log", format="{time} - {level} - {message}", level="INFO")
 logger.info("Usuário {user} fez login", user="Julio Okuda")
 ```
 
-![img](../img/personalize_loguru.png)
+![img](./img/personalize_loguru.png)
 
 * **Acessando o conteúdo do arquivo app.log:**
 
@@ -139,7 +139,7 @@ except Exception as e:
 
 ```
 
-![img](../img/exception.png)
+![img](./img/exception.png)
 
 Usando logger.exception(), Loguru automaticamente captura e loga o traceback da exceção, o que é extremamente útil para diagnóstico de erros.
 
@@ -254,7 +254,7 @@ def soma(a, b):
 soma(5,3)
 ```
 
-![decorator_soma](../img/decorator_soma.png)
+![decorator_soma](./img/decorator_soma.png)
 
 * **O decorator encapsulou a função e já imprimiu os logs do tipo INFO.**
 * **Será que o log foi registrado no app.log?**
@@ -569,7 +569,7 @@ O Loguru oferece uma abordagem moderna e conveniente para logging em Python, sim
 # Desafio:
 * **Aplicar decorador de Log, Timer e Qualidade em nossa ETL**
 
-![img](../img/pic_05.png)
+![img](./img/pic_05.png)
 
 
 ```python
