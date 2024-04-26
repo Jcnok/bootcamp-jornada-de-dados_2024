@@ -3,13 +3,12 @@ import time
 
 import schedule
 from lib.classes.CsvSource import CsvSource
-
-# from lib.classes.JsonSource import JsonSource
+from lib.classes.JsonSource import JsonSource
 from lib.classes.TxtSource import TxtSource
 
 csv_source = CsvSource()
 txt_source = TxtSource()
-# json_source = JsonSource()
+json_source = JsonSource()
 
 
 def check_for_new_files():
@@ -20,7 +19,7 @@ def check_for_new_files():
     """
     csv_source.check_for_new_files()
     txt_source.check_for_new_files()
-    # json_source.check_for_new_files()
+    json_source.check_for_new_files()
 
 
 # Scheduling the execution of the check_for_new_files function every 10 seconds
