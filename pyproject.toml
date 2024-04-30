@@ -28,6 +28,7 @@ pandera = "^0.18.3"
 faker = "^24.9.0"
 schedule = "^1.2.1"
 uvicorn = {extras = ["standard"], version = "^0.29.0"}
+sqlmodel = "^0.0.18"
 
 
 [build-system]
