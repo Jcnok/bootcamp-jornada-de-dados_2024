@@ -56,10 +56,11 @@ graph TD;
     B[Biblioteca] --> C[src]
     B[Biblioteca] --> D[database]
     B[Biblioteca] --> E[notebook]
-    C[src] --> F{api.py}
-    C[src] --> G[livraria.py]
-    D[database] --> H{biblioteca.db}
-    E[notebook] --> I{projeto.ipynb}
+    C[src] --> F{main.py}
+    C[src] --> G[models.py]
+    C[src] --> H[exemplo_crud.py]
+    D[database] --> I{biblioteca.db}
+    E[notebook] --> J{projeto.ipynb}
 ```
 
 # Documentação do Projeto: Biblioteca
@@ -68,31 +69,18 @@ graph TD;
 
 O projeto "Biblioteca" é um sistema de gerenciamento de uma biblioteca, projetado para armazenar informações sobre livros, permitindo operações de adição, busca, atualização e remoção de livros do banco de dados. A seguir, será apresentada a estrutura do projeto, incluindo suas principais pastas e arquivos.
 
-### Pasta src
+# O projeto está organizado da seguinte forma:
 
-A pasta `src` contém o código-fonte do projeto, onde são implementadas as funcionalidades do sistema de gerenciamento da biblioteca.
 
-- **api.py**: Este arquivo contém a implementação da API FastAPI para permitir a interação com o sistema por meio de solicitações HTTP. A API oferece endpoints para realizar operações CRUD sobre os livros da biblioteca.
-
-- **livraria.py**: Este arquivo contém o script principal do sistema de gerenciamento da biblioteca. Aqui são definidas as classes e funções para interagir com o banco de dados, utilizando a biblioteca SQLModel.
-
-### Pasta database
-
-A pasta `database` contém o arquivo do banco de dados SQLite utilizado pelo projeto.
-
-- **biblioteca.db**: Este arquivo é o banco de dados SQLite que armazena as informações sobre os livros da biblioteca. Ele é criado e atualizado pelo sistema conforme necessário.
-
-### Pasta notebook
-
-A pasta `notebook` contém o notebook do projeto, onde são realizadas análises e experimentos relacionados ao sistema de gerenciamento da biblioteca.
-
-- **projeto.ipynb**: Este arquivo é o notebook do projeto, onde são realizadas análises exploratórias de dados, testes de funcionalidades e demonstrações de uso do sistema de gerenciamento da biblioteca.
-
-## Considerações Finais
-
-A estrutura do projeto "Biblioteca" é organizada de forma a facilitar o desenvolvimento, manutenção e utilização do sistema de gerenciamento da biblioteca. A separação de responsabilidades entre as pastas `src`, `database` e `notebook` permite uma abordagem modular e escalável para o projeto, facilitando a adição de novas funcionalidades e a realização de experimentos e análises de dados.
-
-Este documento fornece uma visão geral da estrutura do projeto "Biblioteca", destacando as principais pastas e arquivos, e sua organização para facilitar o desenvolvimento e utilização do sistema de gerenciamento da biblioteca.
+- **Biblioteca**: Pasta principal do projeto.
+    - **src**: Contém os arquivos-fonte do projeto.
+        - **main.py**: Arquivo principal que contém a implementação do servidor FastAPI.
+        - **models.py**: Arquivo que define os modelos de dados utilizados no projeto, como a classe `Livro`.
+        - **exemplo_crud.py**: Arquivo com exemplos de operações CRUD para interagir com o servidor FastAPI.
+    - **database**: Pasta que armazena o banco de dados SQLite.
+        - **biblioteca.db**: Arquivo de banco de dados SQLite que armazena os dados da aplicação.
+    - **notebook**: Pasta que contém arquivos relacionados ao Jupyter Notebook.
+        - **projeto.ipynb**: Arquivo do Jupyter Notebook para experimentação e testes.
 
 
 ## Setando a raiz do projeto:
