@@ -47,6 +47,35 @@ Repositório Principal:
 
 '''
 ```
+## Pré-requisitos para replicar o projeto:
+* instalar o pyenv, poetry, Git e GitHub para dar início ao projeto.
+* **Git e GitHub**:
+    1. [Instruções de instalação do Git e GitHub](https://github.com/git-guides/install-git).
+    2. [Instruções de criação de conta no GitHub aqui](https://docs.github.com/pt/get-started/onboarding/getting-started-with-your-github-account).
+
+* **Pyenv**: É usado para gerenciar versões do Python. [Instruções de instalação do Pyenv aqui](https://github.com/pyenv/pyenv#installation).
+
+* **Poetry**: Este projeto utiliza Poetry para gerenciamento de dependências. [Instruções de instalação do Poetry aqui](https://python-poetry.org/docs/#installation)
+
+## Clone na máquina local com o comando abaixo:
+```python
+# Clonando o repositório do github
+!git clone https://github.com/Jcnok/bootcamp-jornada-de-dados_2024.git
+```
+## configure a pasta local com a versão 3.10.13
+```python
+$ pyenv local 3.10.13
+
+# Verifica se a vesão foi setada corretamente:
+$ pyenv local
+3.10.13
+```
+## Instalação das dependências com poetry:
+```python
+$ poetry install
+```
+* Pronto agora com todas as dependências instaladas, é possível executar todos os scripts.
+
 ## Como executar os scripts:
 **Opção 1:**
 1. Navegue até a pasta "src" da aula desejada.
