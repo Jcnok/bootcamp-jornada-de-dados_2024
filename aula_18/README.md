@@ -1,6 +1,6 @@
 # Aula 18
 
-![png](../img/contract.png)
+![png](./img/contract.png)
 
 ## **Desafio: Construção de um Sistema de Coleta de Dados de Pokémons**
 
