@@ -70,9 +70,12 @@ Para executar o projeto sem o Docker, você pode seguir estas etapas:
    ```bash
    pip install poetry
    poetry install
-   ```
-
-4. **Execute a aplicação:**
+   ``
+4. **Acesse o diretório clonado:**
+   ```bash
+   cd src
+   ````
+5. **Execute a aplicação:**
    ```bash
    uvicorn main:app --host 0.0.0.0 --port 8501
    ```
