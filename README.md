@@ -117,4 +117,4 @@ Email: julio.okuda@gmail.com |
 * **Aula16**: [Desafio: Criação de Banco de Dados de Heróis](https://github.com/Jcnok/bootcamp-jornada-de-dados_2024/tree/main/aula_16#desafio-cria%C3%A7%C3%A3o-de-banco-de-dados-de-her%C3%B3is);
 * **Aula17**: [Desafio Intermediário de SQLAlchemy: Tabelas de Produto e Fornecedor](https://github.com/Jcnok/bootcamp-jornada-de-dados_2024/tree/main/aula_17#desafio-intermedi%C3%A1rio-de-sqlalchemy-tabelas-de-produto-e-fornecedor);
 * **Aula18**: [Desafio: Construção de um Sistema de Coleta de Dados de Pokémons](https://github.com/Jcnok/bootcamp-jornada-de-dados_2024/tree/main/aula_18#desafio-constru%C3%A7%C3%A3o-de-um-sistema-de-coleta-de-dados-de-pok%C3%A9mons);
-* **Aula19**: []();
+* **Aula19**: [Desafio: Criação de um CRUD com FastApi](https://github.com/Jcnok/bootcamp-jornada-de-dados_2024/tree/main/aula_19#desafio---criando-um-crud-com-fastapi);
