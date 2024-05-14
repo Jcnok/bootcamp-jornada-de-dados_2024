@@ -21,7 +21,7 @@ graph TD
 ```
 
 
-Como Executar o Projeto da aula 19.
+## Como Executar o Projeto Usando o Docker.
 
 Este guia fornecerá instruções detalhadas sobre como clonar e executar o repositório da Aula 19, além de demonstrar como acessar a documentação da API e utilizar os métodos do CRUD. Certifique-se de seguir cada passo cuidadosamente para garantir uma experiência bem-sucedida.
 
@@ -51,6 +51,30 @@ Antes de começar, certifique-se de ter o Docker instalado em seu sistema. Se vo
 4. **Execute o contêiner Docker:**
    ```bash
    docker run -p 8501:8501 aula_19
+   ```
+## Como Executar o Projeto sem o Docker.
+
+Para executar o projeto sem o Docker, você pode seguir estas etapas:
+
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/Jcnok/bootcamp-jornada-de-dados_2024.git
+   ```
+
+2. **Acesse o diretório clonado:**
+   ```bash
+   cd aula_19
+   ```
+
+3. **Instale as dependências do projeto:**
+   ```bash
+   pip install poetry
+   poetry install
+   ```
+
+4. **Execute a aplicação:**
+   ```bash
+   uvicorn main:app --host 0.0.0.0 --port 8501
    ```
 
 ### Acessando a Documentação da API
