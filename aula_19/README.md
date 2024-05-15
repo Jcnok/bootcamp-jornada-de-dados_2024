@@ -35,22 +35,22 @@ Antes de começar, certifique-se de ter o Docker instalado em seu sistema. Se vo
 
 1. **Clone o repositório:**
    ```bash
-   git clone https://github.com/Jcnok/bootcamp-jornada-de-dados_2024.git
+   $ git clone https://github.com/Jcnok/bootcamp-jornada-de-dados_2024.git
    ```
 
 2. **Acesse o diretório clonado:**
    ```bash
-   cd aula_19
+   $ cd aula_19
    ```
 
 3. **Construa a imagem Docker:**
    ```bash
-   docker build -t aula_19 .
+   $ docker build -t aula_19 .
    ```
 
 4. **Execute o contêiner Docker:**
    ```bash
-   docker run -p 8501:8501 aula_19
+   $ docker run -p 8501:8501 aula_19
    ```
 ## Como Executar o Projeto sem o Docker.
 
@@ -63,21 +63,21 @@ Para executar o projeto sem o Docker, você pode seguir estas etapas:
 
 2. **Acesse o diretório clonado:**
    ```bash
-   cd aula_19
+   $ cd aula_19
    ```
 
 3. **Instale as dependências do projeto:**
    ```bash
-   pip install poetry
-   poetry install
+   $ pip install poetry
+   $ poetry install
    ``
 4. **Acesse o diretório clonado:**
    ```bash
-   cd src
+   $ cd src
    ````
 5. **Execute a aplicação:**
    ```bash
-   uvicorn main:app --host 0.0.0.0 --port 8501
+   $ uvicorn main:app --host 0.0.0.0 --port 8501
    ```
 
 ### Acessando a Documentação da API
