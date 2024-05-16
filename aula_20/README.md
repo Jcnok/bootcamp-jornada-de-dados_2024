@@ -1,34 +1,5 @@
 ## CRUD FastAPI com PostgreSQL e Frontend Streamlit
-```mermaid
-graph LR
-  subgraph Backend
-    A[main.py] --> B{router.py}
-    B --> C[crud.py]
-    B --> D[schemas.py]
-    C --> E[models.py]
-    C --> F[database.py]
-    subgraph "Banco de Dados"
-      G[PostgreSQL]
-    end
-    F --> G
-  end
-  subgraph Frontend
-    H[app.py] --> I{Requests}
-    I --> B
-    H --> J{Pandas}
-    H --> K{Streamlit}
-  end
-  subgraph Docker
-    L[docker-compose.yml] --> A
-    L --> H
-    L --> G
-  end
-  subgraph "Gerenciamento de Dependências"
-    M[poetry.toml]
-    M --> A
-    M --> H
-  end
-```
+![crud](img/crud.jpeg)
 
 
 Este projeto demonstra a implementação de uma API RESTful utilizando FastAPI, com persistência de dados em um banco de dados PostgreSQL, e um frontend construído com Streamlit para interagir com a API.
