@@ -115,7 +115,37 @@ Projeto CRUD FastAPI com PostgreSQL e Streamlit
 
 **mynetwork**: Rede Docker personalizada para que os containers possam se comunicar entre si.
 
-### Instalação e Execução
+### Instalação e Execução com Docker:
+
+**Instalação:**
+
+1. Certifique-se de ter o Docker e o Docker Compose instalados.
+2. Clone o repositório do projeto.
+3. Navegue até o diretório do projeto.
+
+**Execução:**
+
+1. **Construir as imagens do Docker:**
+   ```bash
+   docker-compose build
+   ```
+2. **Iniciar os containers:**
+   ```bash
+   docker-compose up -d
+   ```
+3. **Acessar a API:**
+   - Acesse a documentação da API através do endereço `http://localhost:8000/docs`.
+4. **Acessar o frontend:**
+   - Acesse a aplicação Streamlit através do endereço `http://localhost:8501`.
+
+### Considerações
+
+* O projeto utiliza o Docker Compose para orquestrar a execução dos containers.
+* As credenciais do banco de dados PostgreSQL estão definidas no arquivo `docker-compose.yml`.
+* A aplicação Streamlit utiliza o `requests` para fazer requisições HTTP para a API.
+* A documentação da API FastAPI pode ser acessada através do endereço `http://localhost:8000/docs`.
+
+### Instalação e Execução sem o Docker:
 
 **Instalação:**
 
@@ -129,15 +159,6 @@ Projeto CRUD FastAPI com PostgreSQL e Streamlit
 1. Execute o comando `poetry run taskipy run` para iniciar a aplicação.
 2. Acesse a API através do endereço `http://localhost:8000/docs` para visualizar a documentação da API.
 3. Acesse o frontend através do endereço `http://localhost:8501` para interagir com a aplicação Streamlit.
-
-### Considerações
-
-* O projeto utiliza o Poetry para gerenciar as dependências.
-* O Docker Compose é utilizado para orquestrar a execução dos containers.
-* As credenciais do banco de dados PostgreSQL estão definidas no arquivo `docker-compose.yml`.
-* A aplicação Streamlit utiliza o `requests` para fazer requisições HTTP para a API.
-* A documentação da API FastAPI pode ser acessada através do endereço `http://localhost:8000/docs`.
-
 
 ### Documentação Detalhada
 
