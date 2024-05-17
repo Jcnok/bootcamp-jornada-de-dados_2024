@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "aula-01"
+version = "0.1.0"
+description = "Instalação do postgresql, criando o banco de dados northwind e realizando consultas."
+authors = ["Julio Okuda <julio.okuda@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.10.13"
+jupyter = "^1.0.0"
+lab = "^8.2"
+psycopg = {extras = ["binary"], version = "^3.1.19"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
