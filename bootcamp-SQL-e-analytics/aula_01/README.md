@@ -437,9 +437,6 @@ pd.read_sql("SELECT * FROM customers LIMIT 10;", conn)
 
 <div>
 
-
-
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -644,8 +641,6 @@ pd.DataFrame(results, columns=[desc[0] for desc in cursor.description])
 
 <div>
 
-
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -736,8 +731,6 @@ pd.DataFrame(results, columns=[desc[0] for desc in cursor.description])
 
 <div>
 
-
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -813,8 +806,6 @@ pd.DataFrame(results, columns=[desc[0] for desc in cursor.description])
 
 <div>
 
-
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -944,9 +935,6 @@ pd.DataFrame(results, columns=[desc[0] for desc in cursor.description])
 
 <div>
 
-
-
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1054,9 +1042,6 @@ pd.DataFrame(results, columns=[desc[0] for desc in cursor.description])
 
 <div>
 
-
-
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1108,9 +1093,6 @@ pd.DataFrame(results, columns=[desc[0] for desc in cursor.description])
 
 <div>
 
-
-
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1162,9 +1144,6 @@ pd.DataFrame(results, columns=[desc[0] for desc in cursor.description])
 
 <div>
 
-
-
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1230,9 +1209,6 @@ pd.DataFrame(results, columns=[desc[0] for desc in cursor.description])
 
 <div>
 
-
-
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1425,9 +1401,6 @@ pd.DataFrame(results, columns=[desc[0] for desc in cursor.description])
 
 <div>
 
-
-
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1493,9 +1466,6 @@ pd.DataFrame(results, columns=[desc[0] for desc in cursor.description])
 
 <div>
 
-
-
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1695,9 +1665,6 @@ pd.DataFrame(results, columns=[desc[0] for desc in cursor.description])
 
 <div>
 
-
-
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1890,9 +1857,6 @@ pd.DataFrame(results, columns=[desc[0] for desc in cursor.description])
 
 <div>
 
-
-
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -2085,9 +2049,6 @@ pd.DataFrame(results, columns=[desc[0] for desc in cursor.description])
 
 <div>
 
-
-
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -2280,9 +2241,6 @@ pd.DataFrame(results, columns=[desc[0] for desc in cursor.description])
 
 <div>
 
-
-
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -2482,9 +2440,6 @@ pd.DataFrame(results, columns=[desc[0] for desc in cursor.description])
 
 <div>
 
-
-
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -2662,9 +2617,6 @@ pd.DataFrame(results, columns=[desc[0] for desc in cursor.description])
 
 <div>
 
-
-
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -2851,15 +2803,7 @@ cursor.execute("SELECT * FROM customers WHERE country IN ('Germany', 'France', '
 results = cursor.fetchall()
 pd.DataFrame(results, columns=[desc[0] for desc in cursor.description])
 ```
-
-
-
-
 <div>
-
-
-
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -3298,12 +3242,7 @@ results = cursor.fetchall()
 pd.DataFrame(results, columns=[desc[0] for desc in cursor.description])
 ```
 
-
-
-
 <div>
-
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
