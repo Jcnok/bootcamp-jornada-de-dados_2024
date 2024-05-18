@@ -436,10 +436,7 @@ pd.read_sql("SELECT * FROM customers LIMIT 10;", conn)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+
 
 
 </style>
@@ -646,10 +643,6 @@ pd.DataFrame(results, columns=[desc[0] for desc in cursor.description])
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
 
 </style>
@@ -742,10 +735,6 @@ pd.DataFrame(results, columns=[desc[0] for desc in cursor.description])
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
 
 </style>
@@ -823,10 +812,6 @@ pd.DataFrame(results, columns=[desc[0] for desc in cursor.description])
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
 
 </style>
@@ -958,10 +943,7 @@ pd.DataFrame(results, columns=[desc[0] for desc in cursor.description])
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+
 
 
 </style>
@@ -1071,10 +1053,7 @@ pd.DataFrame(results, columns=[desc[0] for desc in cursor.description])
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+
 
 
 </style>
@@ -1128,10 +1107,7 @@ pd.DataFrame(results, columns=[desc[0] for desc in cursor.description])
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+
 
 
 </style>
@@ -1185,10 +1161,7 @@ pd.DataFrame(results, columns=[desc[0] for desc in cursor.description])
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+
 
 
 </style>
@@ -1256,10 +1229,7 @@ pd.DataFrame(results, columns=[desc[0] for desc in cursor.description])
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+
 
 
 </style>
@@ -1454,10 +1424,7 @@ pd.DataFrame(results, columns=[desc[0] for desc in cursor.description])
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+
 
 
 </style>
@@ -1525,10 +1492,7 @@ pd.DataFrame(results, columns=[desc[0] for desc in cursor.description])
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+
 
 
 </style>
@@ -1730,10 +1694,7 @@ pd.DataFrame(results, columns=[desc[0] for desc in cursor.description])
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+
 
 
 </style>
@@ -1928,10 +1889,7 @@ pd.DataFrame(results, columns=[desc[0] for desc in cursor.description])
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+
 
 
 </style>
@@ -2126,10 +2084,7 @@ pd.DataFrame(results, columns=[desc[0] for desc in cursor.description])
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+
 
 
 </style>
@@ -2324,10 +2279,7 @@ pd.DataFrame(results, columns=[desc[0] for desc in cursor.description])
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+
 
 
 </style>
@@ -2529,10 +2481,7 @@ pd.DataFrame(results, columns=[desc[0] for desc in cursor.description])
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+
 
 
 </style>
@@ -2712,10 +2661,7 @@ pd.DataFrame(results, columns=[desc[0] for desc in cursor.description])
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+
 
 
 </style>
@@ -2910,10 +2856,7 @@ pd.DataFrame(results, columns=[desc[0] for desc in cursor.description])
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+
 
 
 </style>
@@ -3359,11 +3302,6 @@ pd.DataFrame(results, columns=[desc[0] for desc in cursor.description])
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
 
 </style>
 <table border="1" class="dataframe">
