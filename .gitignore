@@ -164,4 +164,4 @@ aula_05/data/measurements.txt.hdf5
 aula_05/data/measurements.txt.yaml
 aula_05/data/measurements1.txt.hdf5
 aula_05/data/measurements1.txt.yaml
-*.Zone.Identifier
+*.md:Zone.Identifier
