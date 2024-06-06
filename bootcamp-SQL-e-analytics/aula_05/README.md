@@ -1,4 +1,48 @@
 Aula 05:
+![img](img/output_37_0.png)
+## Análise de Dados com SQL e Python
+
+**Em nossa jornada para desvendar os segredos da Northwind, uma empresa fictícia que comercializa produtos alimentícios, exploramos o poder da linguagem SQL e das bibliotecas Python para extrair insights valiosos dos dados.**
+
+**Nosso objetivo foi responder a perguntas cruciais sobre o desempenho da empresa, como:**
+
+* **Quais são as receitas da Northwind ao longo do tempo?**
+* **Quem são os clientes mais valiosos?**
+* **Quais produtos são os mais populares?**
+* **Como podemos segmentar os clientes de forma estratégica?**
+* **Quais clientes do Reino Unido realizaram pagamentos acima de 1000 dólares?**
+
+**Para responder a essas perguntas, empregamos uma variedade de técnicas SQL, incluindo:**
+
+* **Common Table Expressions (CTEs):** Utilizadas para organizar e modularizar consultas complexas, dividindo-as em partes menores e mais legíveis. As CTEs permitem que você defina tabelas temporárias com resultados intermediários, simplificando a lógica da consulta principal.
+* **Views:** Views são tabelas virtuais que representam uma consulta SQL pré-definida. Elas facilitam o acesso e a reutilização de dados complexos, sem a necessidade de reescrever a consulta toda vez.
+* **Joins:** Joins combinam dados de várias tabelas, utilizando uma chave comum para criar uma nova tabela com informações consolidadas. Utilizamos Joins para combinar informações de clientes, pedidos e detalhes de produtos.
+* **Group By:** Agrupa linhas com valores idênticos em uma coluna específica, permitindo realizar cálculos agregados, como somatórios, médias, máximos e mínimos. O Group By foi fundamental para analisar as receitas por cliente e identificar os produtos mais vendidos.
+* **Having:** Filtra os resultados de um Group By, permitindo selecionar grupos que atendem a uma condição específica. Utilizamos o Having para identificar os clientes que realizaram pagamentos superiores a 1000 dólares.
+
+**Interagindo com o Banco de Dados:**
+
+Para conectar-nos ao banco de dados da Northwind, utilizamos bibliotecas Python como `psycopg2`, que oferece uma interface para interagir com bancos de dados PostgreSQL. Essas bibliotecas simplificam o processo de execução de consultas SQL, recuperação de dados e manipulação de resultados, tornando a análise de dados mais eficiente e fácil de realizar.
+
+**Insights Obtidos e Padrões Revelados:**
+
+* **Receitas:** A análise de receitas revelou períodos de pico e quedas, proporcionando insights valiosos para a tomada de decisões estratégicas. As receitas acumuladas (YTD) permitiram identificar o desempenho da Northwind em cada ano.
+* **Clientes:** A análise de clientes identificou os clientes mais valiosos, permitindo segmentar as ações de marketing e vendas de forma mais eficaz.
+* **Produtos:** A identificação dos produtos mais vendidos permitiu direcionar melhor os esforços de marketing e estoque, otimizando os recursos da empresa.
+* **Clientes do Reino Unido:** A análise de clientes do Reino Unido revelou um grupo de clientes com alto potencial de consumo, abrindo oportunidades para campanhas de marketing específicas.
+
+**Temas Abordados:**
+
+* **Análise de dados com SQL:** Abordamos técnicas chave de SQL como CTEs, Views, Joins, Group By, Having, além de funções de agregação e filtros.
+* **Visualização de dados com Python:** Aprendemos a utilizar a biblioteca `matplotlib` para criar gráficos e tabelas que visualizam os resultados da análise de dados.
+* **Interação com bancos de dados em Python:** Domínio da biblioteca `psycopg2` para conectar-se ao banco de dados e executar consultas SQL.
+
+**Conteúdo Aprendido:**
+
+Este projeto nos permitiu dominar as principais técnicas de SQL para análise de dados, além de adquirir habilidades de visualização de dados com Python. Aprendemos a utilizar o SQL para realizar consultas complexas, analisar tendências, segmentar clientes e extrair insights valiosos a partir de dados. Através da integração com bibliotecas Python, automatizamos tarefas e visualizamos os resultados de forma eficiente, tornando a análise de dados mais completa e compreensível.
+
+**A jornada de análise de dados da Northwind nos mostrou o poder do SQL e do Python para desvendar os segredos por trás dos números, impulsionando a tomada de decisões e o sucesso da empresa.**
+
 
 ## Criando a conexão com o banco de dados:
 
